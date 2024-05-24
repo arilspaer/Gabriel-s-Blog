@@ -1,0 +1,234 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: white;
+}
+
+.cover {
+    background: url('path/to/your/image.jpg') no-repeat center center;
+    background-size: cover;
+    padding: 5rem 1rem;
+    padding-left: 100px; /* Tambahkan padding kiri 100px */
+    text-align: left; /* Ubah alignment ke kiri */
+    color: white;
+}
+
+.cover h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+.cover p {
+    margin-top: 0.5rem;
+    font-size: 1.2rem;
+}
+
+.cover p.intro {
+    line-height: 1.5; /* Tambahkan line-height untuk spasi antar baris */
+    padding: 10px 0; /* Tambahkan padding untuk ruang di atas dan bawah teks */
+}
+
+nav ul {
+    list-style: none;
+    padding: 1rem;
+    background-color: rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 1rem;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+main {
+    padding: 1rem;
+}
+
+article {
+    margin-bottom: 2rem;
+}
+
+article h2 {
+    color: #333;
+}
+
+article .content {
+    text-align: justify; /* Ubah align paragraf menjadi rata kiri dan kanan */
+    line-height: 1; /* Atur line spacing menjadi 1 */
+}
+
+.video-description {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+.video-container {
+    flex: 1;
+    padding-right: 20px; /* Tambahkan ruang di sebelah kanan video */
+}
+
+.video-container iframe {
+    width: 100%;
+    height: auto; /* Atur tinggi video menjadi otomatis agar proporsi terjaga */
+}
+
+.description {
+    flex: 1;
+}
+
+.description h3 {
+    margin-top: 0; /* Hapus margin atas pada judul deskripsi */
+}
+
+.description p {
+    margin-top: 0.5rem; /* Atur margin atas pada paragraf deskripsi */
+}
+/* Tambahkan ini ke akhir file CSS Anda */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 0.5rem; /* Mengurangi padding pada footer */
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+@media (max-width: 768px) {
+    nav ul li {
+        display: block;
+        margin: 0;
+        padding: 0.5rem 0;
+    }
+
+    .cover {
+        padding-left: 20px; /* Kurangi padding kiri menjadi 20px untuk layar kecil */
+    }
+
+    .cover h1 {
+        font-size: 2rem;
+    }
+
+    .cover p {
+        font-size: 1rem;
+    }
+}
+
+/* Tambahkan ini ke akhir file CSS Anda */
+nav.left-align {
+    text-align: left; /* Tombol download ditempatkan di sebelah kiri */
+    margin-top: 10px; /* Berikan sedikit ruang di atas tombol */
+}
+
+.btn-download {
+    display: inline-block;
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+.btn-download:hover {
+    background-color: #45a049;
+}
+
+@media (max-width: 768px) {
+    nav.left-align {
+        text-align: center; /* Pusatkan tombol download di layar kecil */
+    }
+}
+
+/* Tambahkan ini ke akhir file CSS Anda */
+.header-cover {
+    background-image: url('background.png'); /* Ganti 'cover.jpg' dengan path gambar Anda */
+    background-size: cover;
+    background-position: center;
+    height: 400px; /* Atur tinggi header sesuai kebutuhan */
+    position: relative; /* Menjadikan header sebagai basis untuk posisi absolut */
+}
+
+.cover {
+    padding-top: 100px; /* Sesuaikan sesuai kebutuhan untuk posisi vertikal teks */
+    color: white; /* Ubah warna teks agar kontras dengan latar belakang */
+}
+
+.cover h1,
+.cover p {
+    text-align: left; /* Mengatur posisi teks menjadi sebelah kiri */
+}
+
+.intro {
+    font-size: 18px;
+}
+
+.navbar {
+    position: absolute; /* Menempatkan navbar pada posisi absolut */
+    top: 0; /* Membuat navbar berada di bagian atas header */
+    right: 0; /* Membuat navbar berada di bagian kanan header */
+    width: 100%; /* Menentukan lebar navbar */
+    text-align: right; /* Menentukan text-align ke kanan */
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar ul li {
+    display: inline;
+    margin-left: 20px; /* Mengatur jarak antara item navbar */
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+.navbar ul li a:hover {
+    text-decoration: underline;
+}
+
+nav.left-align {
+    text-align: left;
+    margin-top: 20px;
+}
+
+.btn-download {
+    display: inline-block;
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+.btn-download:hover {
+    background-color: #45a049;
+}
+
+@media (max-width: 768px) {
+    nav.left-align {
+        text-align: center;
+    }
+}
